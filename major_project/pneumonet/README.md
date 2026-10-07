@@ -1,2 +1,0 @@
-# pneumonet 
-Major project 
