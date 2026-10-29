@@ -1,123 +1,122 @@
+ <div align="center">
 
-<div align="center">
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:0B1F3A,50:075985,100:06B6D4&text=PNEUMONET&fontColor=FFFFFF&fontSize=64&fontAlignY=42&animation=fadeIn&stroke=22C3D6&strokeWidth=1" width="100%" />
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=240&color=0:071426,45:102D50,100:087E8B&text=PNEUMONET&fontSize=68&fontColor=FFFFFF&fontAlignY=42&desc=INTELLIGENT%20CHEST%20X-RAY%20CLASSIFICATION&descSize=17&descColor=8BE9F0&descAlignY=63&animation=fadeIn" />
+# PneumoNet
 
-<br/>
+### Deep Learning Research Framework for Multi-Class Chest X-Ray Classification
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=3000&pause=900&color=38D6D0&center=true&vCenter=true&width=760&lines=Deep+Learning+for+Medical+Image+Analysis;EfficientNet-B0+%7C+Transfer+Learning;Four-Class+Chest+X-Ray+Classification;Building+Towards+Multi-CNN+Research" />
-
-<br/><br/>
-
-<a href="#overview">
-<img src="https://img.shields.io/badge/PROJECT-RESEARCH-102D50?style=for-the-badge&labelColor=071426"/>
-</a>
-<a href="#implementation">
-<img src="https://img.shields.io/badge/MODEL-EFFICIENTNET--B0-087E8B?style=for-the-badge&labelColor=071426"/>
-</a>
-<a href="#performance">
-<img src="https://img.shields.io/badge/TEST%20ACCURACY-98.48%25-2563EB?style=for-the-badge&labelColor=071426"/>
-</a>
-
-<br/><br/>
-
-**A deep learning research framework for multi-class chest X-ray image classification.**
-
-[Overview](#overview) ·
-[Architecture](#architecture) ·
-[Implementation](#implementation) ·
-[Performance](#performance) ·
-[Research Roadmap](#research-roadmap)
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=17&duration=3000&pause=900&color=0891B2&center=true&vCenter=true&width=700&lines=Medical+Image+Classification;EfficientNet-B0+Transfer+Learning;Four-Class+Chest+X-Ray+Analysis;Towards+Comparative+CNN+Research" alt="Animated project description" />
 
 <br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:38D6D0,50:2563EB,100:8B5CF6"/>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![EfficientNet](https://img.shields.io/badge/EfficientNet--B0-0891B2?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Research%20In%20Progress-7C3AED?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-16A34A?style=for-the-badge)
+
+[Overview](#overview) · [Architecture](#system-architecture) · [Dataset](#dataset) · [Implementation](#current-implementation) · [Results](#model-performance) · [Artifacts](#project-artifacts) · [Roadmap](#research-roadmap)
 
 </div>
 
 ---
 
-<a id="overview"></a>
+## Overview
 
-## 01 / Project Overview
+**PneumoNet** is an academic deep learning research project focused on the classification of chest X-ray images into four categories:
 
-**PneumoNet** is an academic deep learning research project focused on automated classification of chest X-ray images into four categories:
-
-| Classification | Description |
-|:---|:---|
+| Class | Description |
+|---|---|
 | COVID-19 | COVID-19 associated chest X-ray images |
-| Normal | Images without the target abnormalities |
+| Normal | Chest X-ray images without the target abnormalities |
 | Pneumonia | Pneumonia-associated chest X-ray images |
 | Tuberculosis | Tuberculosis-associated chest X-ray images |
 
-The broader research vision is to establish a comparative CNN framework using EfficientNet, DenseNet and ResNet architectures.
+The broader research objective is to develop a comparative CNN framework using multiple deep learning architectures, including **EfficientNet, DenseNet, and ResNet**.
 
-The current implementation phase focuses on **EfficientNet-B0**, developed using transfer learning and PyTorch.
+The current implementation phase focuses on **EfficientNet-B0**, using transfer learning with pretrained ImageNet weights and PyTorch.
 
-<div align="center">
+### Research Scope
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:38D6D0,100:2563EB" width="85%"/>
-
-</div>
-
-## 02 / Research Objectives
-
-- Develop a structured chest X-ray image classification pipeline.
-- Apply preprocessing and normalization to medical images.
-- Implement EfficientNet-B0 using pretrained ImageNet weights.
-- Evaluate classification performance using multiple metrics.
-- Establish a baseline for future CNN architecture comparison.
-- Investigate model generalization, interpretability and computational efficiency.
-- Develop an application interface for model inference in a future phase.
+| Architecture | Project status |
+|---|---|
+| EfficientNet-B0 | Implemented and evaluated |
+| DenseNet | Planned |
+| ResNet | Planned |
+| Comparative CNN evaluation | Planned |
 
 ---
 
-<a id="architecture"></a>
+## Research Objectives
 
-## 03 / System Architecture
+- Develop a structured chest X-ray classification pipeline.
+- Apply image preprocessing and normalization.
+- Implement EfficientNet-B0 using transfer learning.
+- Evaluate performance using accuracy, precision, recall, and F1-score.
+- Analyze class-wise predictions and model errors.
+- Establish a baseline for future CNN architecture comparison.
+- Extend the framework towards explainability and application integration.
 
-The current experimental pipeline consists of dataset preparation, image preprocessing, EfficientNet-B0 feature extraction, four-class prediction and evaluation.
+---
+
+## System Architecture
+
+The current implementation follows a pipeline from dataset preparation to model evaluation.
+
+<!-- Add your system architecture image at this location -->
+<div align="center">
+
+<img src="pneumonet_artifacts\efficient-net-architecture.png" width="95%" alt="PneumoNet system architecture diagram" />
+
+**Figure: PneumoNet System Architecture**
+
+</div>
+
+> **Note:** Save your architecture diagram as `system_architecture.png` inside the `major project` directory. If you use a different filename or location, update the image path above.
+
+### Experimental Workflow
 
 ```mermaid
-flowchart TB
-    A["CHEST X-RAY DATASET"] --> B["DATA PREPARATION"]
-    B --> C["IMAGE PREPROCESSING"]
-    C --> D["TRAIN / VALIDATION / TEST"]
-
-    D --> E["EFFICIENTNET-B0"]
-    E --> F["FEATURE EXTRACTION"]
-    F --> G["FOUR-CLASS CLASSIFIER"]
-    G --> H["SOFTMAX OUTPUT"]
+flowchart TD
+    A["Chest X-Ray Dataset"] --> B["Dataset Preparation"]
+    B --> C["Image Preprocessing"]
+    C --> D["Train / Validation / Test Split"]
+    D --> E["EfficientNet-B0"]
+    E --> F["Feature Extraction"]
+    F --> G["Four-Class Classifier"]
+    G --> H["Softmax Output"]
 
     H --> I["COVID-19"]
-    H --> J["NORMAL"]
-    H --> K["PNEUMONIA"]
-    H --> L["TUBERCULOSIS"]
+    H --> J["Normal"]
+    H --> K["Pneumonia"]
+    H --> L["Tuberculosis"]
 
-    G --> M["MODEL EVALUATION"]
-    M --> N["METRICS AND CONFUSION MATRIX"]
+    G --> M["Model Evaluation"]
+    M --> N["Metrics and Confusion Matrix"]
 
-    style A fill:#102D50,color:#FFFFFF,stroke:#38D6D0
-    style B fill:#102D50,color:#FFFFFF,stroke:#38D6D0
-    style C fill:#102D50,color:#FFFFFF,stroke:#38D6D0
-    style D fill:#102D50,color:#FFFFFF,stroke:#38D6D0
-    style E fill:#087E8B,color:#FFFFFF,stroke:#38D6D0
-    style F fill:#087E8B,color:#FFFFFF,stroke:#38D6D0
-    style G fill:#2563EB,color:#FFFFFF,stroke:#60A5FA
-    style H fill:#2563EB,color:#FFFFFF,stroke:#60A5FA
-    style I fill:#172554,color:#FFFFFF,stroke:#38D6D0
-    style J fill:#172554,color:#FFFFFF,stroke:#38D6D0
-    style K fill:#172554,color:#FFFFFF,stroke:#38D6D0
-    style L fill:#172554,color:#FFFFFF,stroke:#38D6D0
-    style M fill:#312E81,color:#FFFFFF,stroke:#A78BFA
-    style N fill:#312E81,color:#FFFFFF,stroke:#A78BFA
+    style A fill:#102D50,color:#fff,stroke:#38BDF8
+    style B fill:#164E63,color:#fff,stroke:#22D3EE
+    style C fill:#164E63,color:#fff,stroke:#22D3EE
+    style D fill:#164E63,color:#fff,stroke:#22D3EE
+    style E fill:#075985,color:#fff,stroke:#38BDF8
+    style F fill:#075985,color:#fff,stroke:#38BDF8
+    style G fill:#1D4ED8,color:#fff,stroke:#60A5FA
+    style H fill:#1D4ED8,color:#fff,stroke:#60A5FA
+    style I fill:#166534,color:#fff,stroke:#4ADE80
+    style J fill:#166534,color:#fff,stroke:#4ADE80
+    style K fill:#166534,color:#fff,stroke:#4ADE80
+    style L fill:#166534,color:#fff,stroke:#4ADE80
+    style M fill:#5B21B6,color:#fff,stroke:#C4B5FD
+    style N fill:#5B21B6,color:#fff,stroke:#C4B5FD
 ```
 
-### EfficientNet-B0 Feature Extraction
+### EfficientNet-B0 Architecture
 
-EfficientNet-B0 is based on compound scaling, which balances network depth, width and input resolution.
+EfficientNet-B0 uses compound scaling to balance network depth, width, and input resolution.
 
-Its core building block is MBConv (Mobile Inverted Bottleneck Convolution), incorporating:
+Its primary building block is **MBConv (Mobile Inverted Bottleneck Convolution)**, which incorporates:
 
 - Expansion convolution
 - Depthwise convolution
@@ -125,94 +124,75 @@ Its core building block is MBConv (Mobile Inverted Bottleneck Convolution), inco
 - Projection convolution
 - Conditional residual connections
 
-The original classification head is replaced with a four-class output layer for PneumoNet.
+The original classification layer is replaced with a four-class output layer for PneumoNet.
 
 ---
 
-## 04 / Technology Stack
+## Technology Stack
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,pytorch,git,github,vscode&theme=dark" />
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
-<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white"/>
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=plotly&logoColor=white"/>
-
-</div>
-
-| Layer | Technology |
-|:---|:---|
-| Programming | Python |
-| Deep Learning | PyTorch |
+| Component | Technology |
+|---|---|
+| Programming Language | Python |
+| Deep Learning Framework | PyTorch |
 | CNN Architecture | EfficientNet-B0 |
 | Image Processing | PIL, Torchvision |
 | Data Processing | NumPy, Pandas |
-| Evaluation | Scikit-learn |
+| Model Evaluation | Scikit-learn |
 | Visualization | Matplotlib |
 | Training Environment | Kaggle |
 | GPU | NVIDIA Tesla T4 |
-| Model Format | PyTorch `.pth` |
+| Model Checkpoint | PyTorch `.pth` |
 
 ---
 
-## 05 / Dataset Engineering
+## Dataset
 
 The prepared dataset contains **70,727 chest X-ray images** collected from multiple sources.
 
-<div align="center">
+### Dataset Distribution
 
-| Dataset Split | Image Count | Distribution |
-|:---|---:|---|
+| Dataset Split | Images | Percentage |
+|---|---:|---:|
 | Training | 56,402 | 79.75% |
 | Validation | 7,067 | 9.99% |
 | Testing | 7,258 | 10.26% |
 | **Total** | **70,727** | **100%** |
 
-</div>
-
-### Preprocessing Pipeline
+### Image Preprocessing
 
 1. Dataset organization and label verification.
-2. Image conversion to RGB.
-3. Image resizing to 224 × 224.
+2. Image conversion to RGB format.
+3. Image resizing to `224 × 224`.
 4. ImageNet normalization.
-5. Train, validation and test split preparation.
-6. Class-weighted loss for imbalanced classification.
+5. Train, validation, and test split preparation.
+6. Class-weighted loss to address class imbalance.
 
-**Data integrity note:** Patient-level separation was checked for the NIH source where identifiers were available. Patient overlap could not be ruled out for all other sources.
+**Data integrity note:** Patient-level separation was checked for the NIH source where identifiers were available. Patient overlap could not be ruled out across every dataset source.
 
 ---
 
-<a id="implementation"></a>
+## Current Implementation
 
-## 06 / Current Implementation
+### EfficientNet-B0 Configuration
 
-### EfficientNet-B0 Training Configuration
-
-| Configuration | Value |
-|:---|:---|
+| Parameter | Configuration |
+|---|---|
 | Architecture | EfficientNet-B0 |
 | Pretrained Weights | ImageNet |
 | Input Resolution | 224 × 224 |
-| Number of Classes | 4 |
-| Trainable Parameters | ~4.01 Million |
-| Training Epochs | 5 |
+| Output Classes | 4 |
+| Trainable Parameters | Approximately 4.01 million |
+| Epochs | 5 |
 | Batch Size | 32 |
 | Optimizer | AdamW |
 | Learning Rate | 0.0001 |
 | Weight Decay | 0.0001 |
 | Loss Function | Weighted Cross Entropy |
 | Scheduler | ReduceLROnPlateau |
-| Mixed Precision | CUDA |
-| Hardware | NVIDIA Tesla T4 |
+| Mixed Precision | Enabled on CUDA |
+| GPU | NVIDIA Tesla T4 |
 
-### Training Workflow
+### Training Pipeline
 
 ```text
 PRETRAINED EFFICIENTNET-B0
@@ -238,39 +218,23 @@ FINAL TEST EVALUATION
 
 ---
 
-<a id="performance"></a>
+## Model Performance
 
-## 07 / Model Performance
+The trained EfficientNet-B0 model was evaluated on the prepared test split.
 
-<div align="center">
+### Overall Test Metrics
 
-<table>
-<tr>
-<td align="center" width="25%">
-<h2 style="color:#087E8B">98.48%</h2>
-<strong>Accuracy</strong>
-</td>
-<td align="center" width="25%">
-<h2 style="color:#2563EB">90.95%</h2>
-<strong>Macro Precision</strong>
-</td>
-<td align="center" width="25%">
-<h2 style="color:#8B5CF6">96.27%</h2>
-<strong>Macro Recall</strong>
-</td>
-<td align="center" width="25%">
-<h2 style="color:#0D9488">93.47%</h2>
-<strong>Macro F1</strong>
-</td>
-</tr>
-</table>
+| Metric | Score |
+|---|---:|
+| Accuracy | **98.48%** |
+| Macro Precision | **90.95%** |
+| Macro Recall | **96.27%** |
+| Macro F1-Score | **93.47%** |
 
-</div>
-
-### Class-wise Evaluation
+### Class-Wise Evaluation
 
 | Class | Precision | Recall | F1-Score |
-|:---|---:|---:|---:|
+|---|---:|---:|---:|
 | COVID-19 | 86.52% | 95.31% | 90.71% |
 | Normal | 99.48% | 98.95% | 99.21% |
 | Pneumonia | 91.12% | 93.33% | 92.22% |
@@ -279,49 +243,69 @@ FINAL TEST EVALUATION
 
 ### Confusion Matrix
 
-| Actual / Predicted | COVID-19 | Normal | Pneumonia | TB |
-|:---|---:|---:|---:|---:|
+Rows represent actual labels; columns represent predicted labels.
+
+| Actual / Predicted | COVID-19 | Normal | Pneumonia | Tuberculosis |
+|---|---:|---:|---:|---:|
 | COVID-19 | 122 | 3 | 0 | 3 |
 | Normal | 16 | 6486 | 45 | 8 |
 | Pneumonia | 2 | 30 | 462 | 1 |
 | Tuberculosis | 1 | 1 | 0 | 78 |
 
+<div align="center">
+
+<img src="pneumonet_artifacts\confusion_matrix.png" width="95%" alt="PneumoNet Confusion Matrix diagram" />
+
+**Figure: PneumoNet Confusion Matrix**
+
+</div>
+
 ### Training Progress
 
 | Epoch | Training Loss | Validation Accuracy | Validation Macro F1 |
-|---:|---:|---:|---:|
+|---|---:|---:|---:|
 | 1 | 0.2893 | 97.17% | 86.82% |
 | 2 | 0.1274 | 97.57% | 88.69% |
 | 3 | 0.1052 | 97.68% | 90.22% |
 | 4 | 0.0823 | 97.92% | 92.05% |
 | 5 | 0.0632 | 98.32% | 94.56% |
 
-**Evaluation interpretation:** The current model demonstrates promising results on the prepared test split. The difference between accuracy and macro F1 highlights the importance of class-wise evaluation in an imbalanced dataset.
+The model achieved its best validation macro F1-score in epoch 5.
+
+**Evaluation note:** Accuracy should be interpreted alongside macro precision, recall, and F1-score because the dataset is class-imbalanced. These results represent performance on the prepared test split, not independent clinical validation.
 
 ---
 
-## 08 / Model Artifacts
+## Project Artifacts
 
-The current experiment generates the following outputs:
+The repository includes the implementation resources and experiment outputs generated during the current phase.
 
-```text
-pneumonet_results/
-│
-├── best_pneumonet.pth
-├── metrics.json
-├── classification_report.csv
-├── confusion_matrix.csv
-├── confusion_matrix.png
-└── model_config.json
-```
+### Model and Evaluation Outputs
 
-The `.pth` checkpoint stores the trained model state and associated training metadata.
+| Artifact | Description |
+|---|---|
+| `best_pneumonet.pth` | Trained EfficientNet-B0 checkpoint |
+| `metrics.json` | Overall evaluation metrics |
+| `classification_report.csv` | Class-wise precision, recall, and F1-score |
+| `confusion_matrix.csv` | Confusion matrix values |
+| `confusion_matrix.png` | Confusion matrix visualization |
+| `model_config.json` | Model configuration and metadata |
+| `pneumonet_artifacts.zip` | Packaged experiment artifacts |
+| `pneumonet_model.zip` | Packaged model checkpoint |
+
+### Repository Resources
+
+- [Browse project implementation and artifacts](./major%20project/)
+- [View repository README](./README.md)
+- [View all project files](https://github.com/Shashikala-11/pneumonet)
+
+The `.pth` checkpoint contains the trained PyTorch model state and associated training metadata.
 
 ---
 
-## 09 / Model Inference
+## Model Inference
 
-The trained EfficientNet-B0 checkpoint can be reconstructed using PyTorch.
+The trained model can be reconstructed using PyTorch.
 
 ```python
 import torch
@@ -352,33 +336,32 @@ model.eval()
 print("EfficientNet-B0 loaded successfully.")
 ```
 
-The inference pipeline must apply the same resizing, RGB conversion and normalization used during model evaluation.
+For image inference, apply the same RGB conversion, resizing, and ImageNet normalization used during training and evaluation.
 
 ---
 
-<a id="research-roadmap"></a>
+## Research Roadmap
 
-## 10 / Research Roadmap
-
-PneumoNet is envisioned as a multi-CNN comparative research framework.
+PneumoNet is envisioned as a multi-architecture comparative research framework.
 
 | Research Component | Status |
-|:---|:---|
+|---|---|
 | Dataset preparation | Completed |
 | Image preprocessing | Completed |
 | EfficientNet-B0 implementation | Completed |
 | Model training and evaluation | Completed |
 | Checkpoint and metrics export | Completed |
+| System architecture documentation | In progress |
 | DenseNet implementation | Planned |
 | ResNet implementation | Planned |
-| Multi-CNN comparison | Planned |
+| Comparative CNN evaluation | Planned |
 | Explainable AI integration | Planned |
 | Web application integration | Planned |
 | External validation | Planned |
 
 ### Planned Comparative Analysis
 
-Future experiments will evaluate architectures under comparable conditions using:
+Future experiments will compare the architectures using:
 
 - Accuracy and macro F1-score
 - Class-wise precision and recall
@@ -388,25 +371,26 @@ Future experiments will evaluate architectures under comparable conditions using
 
 ---
 
-## 11 / Limitations and Responsible Use
+## Limitations and Responsible Use
 
 - Dataset imbalance may influence classification performance.
-- Source-related differences may affect generalization.
+- Differences between data sources may affect model generalization.
 - Patient-level separation could not be confirmed for every source.
 - Softmax scores are not calibrated clinical probabilities.
-- External clinical validation has not been completed.
+- Independent external clinical validation has not been completed.
+- The current implementation is limited to EfficientNet-B0.
 
-**PneumoNet is an academic research prototype, not a medical diagnostic system. It must not be used as a substitute for professional medical evaluation.**
+**PneumoNet is an academic research prototype, not a medical diagnostic system.** It must not be used as a substitute for professional medical evaluation or clinical decision-making.
 
 ---
 
-## 12 / Getting Started
+## Getting Started
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/PneumoNet.git
-cd PneumoNet
+git clone https://github.com/Shashikala-11/pneumonet.git
+cd pneumonet
 ```
 
 ### Install Dependencies
@@ -417,11 +401,11 @@ pip install torch torchvision numpy pandas pillow scikit-learn matplotlib
 
 ### Load the Model
 
-Follow the inference example in Section 09 after placing the downloaded checkpoint in the project directory.
+Place the trained `best_pneumonet.pth` checkpoint in your working directory and follow the inference example above.
 
 ---
 
-## 13 / References
+## References
 
 1. M. Tan and Q. V. Le, "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks," ICML, 2019.
 2. G. Huang et al., "Densely Connected Convolutional Networks," CVPR, 2017.
@@ -433,12 +417,16 @@ Follow the inference example in Section 09 after placing the downloaded checkpoi
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=160&section=footer&color=0:071426,50:102D50,100:087E8B&text=PNEUMONET&fontSize=35&fontColor=FFFFFF&fontAlignY=55&animation=fadeIn"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1F3A,50:0891B2,100:22D3EE" width="100%" />
 
-**PNEUMONET**
+### PNEUMONET
 
-*Deep Learning. Medical Imaging. Comparative Research.*
+**Deep Learning. Medical Imaging. Comparative Research.**
 
-<sub>Academic Research Project | EfficientNet-B0 Implementation</sub>
+Academic Research Project | EfficientNet-B0 Implementation
+
+[GitHub Repository](https://github.com/Shashikala-11/pneumonet)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:0B1F3A,50:075985,100:06B6D4" width="100%" />
 
 </div>
