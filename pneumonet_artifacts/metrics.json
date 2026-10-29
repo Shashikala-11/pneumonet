@@ -1,0 +1,16 @@
+{
+    "model": "EfficientNet-B0",
+    "best_epoch": 5,
+    "best_validation_macro_f1": 0.9455890608821831,
+    "test_accuracy": 0.9848443097271976,
+    "test_macro_precision": 0.9094856933102342,
+    "test_macro_recall": 0.9627330043859649,
+    "test_macro_f1": 0.9347470788523021,
+    "test_images": 7258,
+    "class_names": [
+        "COVID-19",
+        "Normal",
+        "Pneumonia",
+        "Tuberculosis"
+    ]
+}
