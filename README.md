@@ -243,15 +243,6 @@ The trained EfficientNet-B0 model was evaluated on the prepared test split.
 
 ### Confusion Matrix
 
-Rows represent actual labels; columns represent predicted labels.
-
-| Actual / Predicted | COVID-19 | Normal | Pneumonia | Tuberculosis |
-|---|---:|---:|---:|---:|
-| COVID-19 | 122 | 3 | 0 | 3 |
-| Normal | 16 | 6486 | 45 | 8 |
-| Pneumonia | 2 | 30 | 462 | 1 |
-| Tuberculosis | 1 | 1 | 0 | 78 |
-
 <div align="center">
 
 <img src="pneumonet_artifacts\confusion_matrix.png" width="95%" alt="PneumoNet Confusion Matrix diagram" />
