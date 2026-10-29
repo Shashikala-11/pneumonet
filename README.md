@@ -430,3 +430,15 @@ Academic Research Project | EfficientNet-B0 Implementation
 <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:0B1F3A,50:075985,100:06B6D4" width="100%" />
 
 </div>
+
+## Project Team
+
+This project is developed by:
+
+| Team Member | Roll Number |
+|---|---:|
+| **Shashikala Rajesh Gupta** | 12 |
+| **Mestry Navneet Surendra** | 23 |
+| **Pandey Abhay Sunil** | 28 |
+| **Bansode Sahil Avinash** | 03 |
+
