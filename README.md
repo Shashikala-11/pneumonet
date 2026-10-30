@@ -74,8 +74,6 @@ The current implementation follows a pipeline from dataset preparation to model 
 
 </div>
 
-> **Note:** Save your architecture diagram as `system_architecture.png` inside the `major project` directory. If you use a different filename or location, update the image path above.
-
 ### Experimental Workflow
 
 ```mermaid
